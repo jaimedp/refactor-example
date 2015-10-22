@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .main { float: left; width: 50%; }
+            .side { float: left; width: 50%; }
+            li { list-style: none; margin-bottom: 10px; cursor: pointer; }
+            label {min-width: 5em; text-align: right; font-weight: bold; margin-right: 1em; display: inline-block; }
+        </style>
+    </head>
+    <body>
+
+        <div id="content">
+            <div class="main">
+                <h4>Search for Meetings</h4>
+                <div id="search-box"></div>
+                <div id="results"></div>
+            </div>
+
+            <div class="side">
+                <h4>Meeting Details</h4>
+                <div id="details"></div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+        <script src="meeting-details-view.js"></script>
+        <script src="search-box-view.js"></script>
+        <script src="search-results-view.js"></script>
+        <script src="meeting-repo.js"></script>
+        <script src="meeting-service.js"></script>
+        <script src="page.js"></script>
+    </body>
+</html>
